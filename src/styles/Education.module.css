@@ -1,0 +1,125 @@
+.container {
+  padding: 4rem 0;
+  background-color: #E6DCC3;
+  position: relative;
+}
+
+.heading {
+    font-size: 48px;
+    color: #4A3F35;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 600;
+  }
+
+.educationCard {
+  max-width: 90%;
+  margin: 0 auto 2rem;
+  background-color: #8B4513;
+  border-radius: 20px;
+  padding: 3rem;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeInUp 1s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.educationCard:last-child {
+  margin-bottom: 0;
+}
+
+.educationInfo {
+  flex: 3;
+}
+
+.degree {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.institution {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.duration {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.gpa {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.logoContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instituteLogo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  object-fit: contain;
+}
+
+/* Decorative circle in the background */
+.educationCard::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  opacity: 0.1;
+  right: -200px;
+  bottom: -200px;
+}
+
+.educationCard::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  opacity: 0.1;
+  left: -150px;
+  top: -150px;
+}
+
+@media (max-width: 1024px) {
+  .educationCard {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .educationCard {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 36px;
+  }
+
+  .degree {
+    font-size: 1.5rem;
+  }
+
+  .logoContainer {
+    order: -1; /* Move logo to top on mobile */
+  }
+} 

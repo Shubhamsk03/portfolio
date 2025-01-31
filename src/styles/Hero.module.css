@@ -1,0 +1,220 @@
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%; /* Match WorkExperience width */
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.topSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  position: relative;
+}
+
+.introSection {
+  animation: fadeInLeft 1s ease-out;
+  background-color: #FFF;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.introText {
+  color: #4A3F35;
+}
+
+.introHeading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.introName {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  background: linear-gradient(45deg, #4A3F35, #6B5B4D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.introRole {
+  font-size: 2rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.profileSection {
+  animation: fadeInRight 1s ease-out;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add some padding around the container */
+}
+
+.profileImage {
+  width: 100%;
+  max-width: 400px;
+  height: 400px; /* Set explicit height */
+  border-radius: 50%;
+  border: 8px solid #FFF;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  object-position: top center; /* This will pull the image up */
+}
+
+.profileImage:hover {
+  transform: scale(1.02);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.socialIcon {
+  background-color: #4A3F35;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+
+.socialIconImage {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: none;
+}
+
+.downloadButton {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 12px 24px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  width: fit-content;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.downloadButton::before {
+  font-size: 1.2rem;
+}
+
+.downloadButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.socialIcon:hover {
+  transform: translateY(-3px);
+  background-color: #5D4E42;
+}
+
+.socialIcon img[alt="CV"] {
+  width: 18px;
+  height: 18px;
+}
+
+.socialIcon img[alt="GitHub"] {
+  filter: brightness(0) invert(1);
+}
+
+.bottomSection {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Match WorkExperience layout */
+  gap: 2rem;
+}
+
+.aboutSection {
+  background-color: #FFF;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px #0000001a;
+  animation: fadeInUp 1.4s ease-out;
+  
+}
+
+.aboutHeading {
+  font-size: 3rem;
+  color: #4A3F35;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.aboutText {
+  color: #666;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* Add responsive styles */
+@media (max-width: 1024px) {
+  .mainContent {
+    max-width: 95%;
+  }
+
+  .introName {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .topSection {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .profileSection {
+    order: -1; /* Move profile image to top on mobile */
+  }
+
+  .profileImage {
+    max-width: 300px;
+    height: 300px; /* Maintain aspect ratio on mobile */
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+
+  .bottomSection {
+    grid-template-columns: 1fr;
+  }
+
+  .introName {
+    font-size: 2.5rem;
+  }
+
+  .introRole {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .introName {
+    font-size: 2rem;
+  }
+
+  .aboutHeading {
+    font-size: 2.5rem;
+  }
+} 

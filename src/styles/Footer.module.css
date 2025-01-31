@@ -1,0 +1,36 @@
+.footer {
+  background-color: #4A3F35;
+  padding: 2rem 0;
+  color: #FFFFFF;
+  margin-top: auto;
+}
+
+.content {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.socialLink {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.socialLink:hover {
+  opacity: 1;
+} 
