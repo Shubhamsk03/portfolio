@@ -4,23 +4,14 @@ import styles from '../styles/Hero.module.css'
 const Hero = () => {
   return (
     <main className={styles.mainContent}>
+      <div className={styles.heroBackground}></div>
       <div className={styles.topSection}>
         <section className={styles.introSection}>
           <div className={styles.introText}>
             <h1 className={styles.introHeading}>Hello, I'm</h1>
             <h2 className={styles.introName}>Shubham S Kawalikai,</h2>
             <h3 className={styles.introRole}>Software Engineer</h3>
-          </div>
-        </section>
-
-        <section className={styles.profileSection}>
-          <img 
-            src="/Profile-Pic.png"
-            alt="Profile"
-            className={styles.profileImage}
-          />
-        </section>
-
+            
         <section className={styles.socialLinks}>
           <a 
             href="https://www.linkedin.com/in/shubham-kawalikai/" 
@@ -50,6 +41,18 @@ const Hero = () => {
             Download Resume
           </a>
         </section>
+          </div>
+
+        </section>
+
+        <section className={styles.profileSection} style={{ position: 'relative', zIndex: 10 }}>
+          <img 
+            src="/SHUBHAMPhoto.jpg"
+            alt="Profile"
+            className={styles.profileImage}
+          />
+        </section>
+
       </div>
 
       <div className={styles.bottomSection}>

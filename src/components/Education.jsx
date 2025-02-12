@@ -10,7 +10,7 @@ const Education = () => {
           <h3 className={styles.degree}>Bachelor of Engineering ( Computer Science )</h3>
           <p className={styles.institution}>SJB Insititute of Technology, Bangalore, India</p>
           <p className={styles.duration}>March 2019 - March 2023</p>
-          <p className={styles.gpa}>SGPA: </p>
+          <p className={styles.gpa}>CGPA: 8.77</p>
         </div>
         <div className={styles.logoContainer}>
           <img 

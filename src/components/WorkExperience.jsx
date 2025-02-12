@@ -99,7 +99,7 @@ const WorkExperience = () => {
           {/* Techcanopy Software Labs */}
           <div style={styles.projectCard}>
             <h3 style={styles.projectTitle}>Project: Multi-User WiFi Management System</h3>
-            <p style={styles.projectRole}>Role: Full Stack Developer</p>
+            {/* <p style={styles.projectRole}>Role: Full Stack Developer</p> */}
             <p style={styles.technologies}>Technologies: Symfony, HTML, JavaScript, MySQL, SOAP APIs</p>
             <ul style={styles.bulletPoints}>
               <li style={styles.bulletPoint}>
@@ -124,7 +124,7 @@ const WorkExperience = () => {
             </ul>
 
             <h3 style={styles.projectTitle}>Project: Admin Application Optimization (EdTech Platform)</h3>
-            <p style={styles.projectRole}>Role: Web Developer</p>
+            {/* <p style={styles.projectRole}>Role: Web Developer</p> */}
             <p style={styles.technologies}>Technologies: PHP, MySQL, HTML, CSS, JavaScript</p>
             <ul style={styles.bulletPoints}>
               <li style={styles.bulletPoint}>
@@ -142,7 +142,7 @@ const WorkExperience = () => {
             </ul>
     
             <h3 style={styles.projectTitle}>Project: Client Application for EdTech Platform</h3>
-            <p style={styles.projectRole}>Role: Full Stack Developer</p>
+            {/* <p style={styles.projectRole}>Role: Full Stack Developer</p> */}
             <p style={styles.technologies}>Technologies: React Native, Node.js, HTML, CSS, JavaScript</p>
             <ul style={styles.bulletPoints}>
               <li style={styles.bulletPoint}>
@@ -181,7 +181,7 @@ const WorkExperience = () => {
         {/* Right side - Internship Project Card */}
         <div style={styles.projectCard}>
           <h3 style={styles.projectTitle}>Internship Project: Recruitment Application Development</h3>
-          <p style={styles.projectRole}>Role: Intern</p>
+          {/* <p style={styles.projectRole}>Role: Intern</p> */}
           <p style={styles.technologies}>Technologies: React, AWS</p>
           <ul style={styles.bulletPoints}>
             <li style={styles.bulletPoint}>
@@ -216,7 +216,7 @@ const WorkExperience = () => {
         {/* Right side - Internship Project Card */}
         <div style={styles.projectCard}>
           <h3 style={styles.projectTitle}>Internship Project: Recruitment Application Development</h3>
-          <p style={styles.projectRole}>Role: Intern</p>
+          {/* <p style={styles.projectRole}>Role: Intern</p> */}
           <p style={styles.technologies}>Technologies: React, AWS</p>
           <ul style={styles.bulletPoints}>
             <li style={styles.bulletPoint}>
@@ -245,8 +245,8 @@ const WorkExperience = () => {
         {/* Left side - Company Info */}
         <div style={styles.companyCard}>
           <h2 style={styles.companyName}>Zeliot</h2>
-          <p style={styles.companyRole}>Intern</p>
-          <p style={styles.duration}>Dec 2022 - Feb 2023</p>
+          <p style={styles.companyRole}>Software Intern</p>
+          <p style={styles.duration}>Nov 2022 - Dec 2022</p>
           <p style={styles.location}>Bangalore, India</p>
         </div>
       </div>

@@ -4,6 +4,18 @@
   max-width: 90%; /* Match WorkExperience width */
   margin: 0 auto;
   gap: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* This makes it extend halfway */
+  background-color: var(--navbar-bg-color); /* Use your navbar's color */
+  z-index: 1;
 }
 
 .topSection {
@@ -11,6 +23,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   position: relative;
+  z-index: 2;
 }
 
 .introSection {
@@ -20,7 +33,7 @@
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .introText {
@@ -55,6 +68,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px; /* Add some padding around the container */
+  z-index: 2;
 }
 
 .profileImage {
@@ -67,6 +81,8 @@
   transition: transform 0.3s ease;
   object-fit: cover;
   object-position: top center; /* This will pull the image up */
+  position: relative;
+  z-index: 2;
 }
 
 .profileImage:hover {
@@ -78,6 +94,8 @@
   gap: 1.5rem;
   margin: 2rem 0;
   animation: fadeInUp 1.2s ease-out;
+  position: relative;
+  z-index: 2;
 }
 
 .socialIcon {
