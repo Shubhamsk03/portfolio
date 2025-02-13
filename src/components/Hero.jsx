@@ -42,7 +42,7 @@ const Hero = () => {
               />
             </a>
             <a 
-              href="/resume.pdf" 
+              href="/Resume-Shubham.pdf"
               download={hero.social.resume.filename}
               className={styles.downloadButton}
             >

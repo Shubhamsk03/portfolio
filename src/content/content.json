@@ -24,12 +24,176 @@
       },
       "resume": {
         "buttonText": "Download Resume",
-        "filename": "Shubham_Kawalikai_Resume.pdf"
+        "filename": "Resume-Shubham.pdf"
       }
     },
     "about": {
       "heading": "about.",
       "text": "I'm a Software Engineer with expertise in full-stack development, currently working at Techcanopy Software Labs. My experience spans across building scalable web applications using React, AWS, Symfony, and various other technologies. I specialize in developing user-centric solutions, from multi-portal WiFi management systems to optimized admin applications for EdTech platforms. With a strong foundation in both front-end and back-end development, I focus on creating efficient, maintainable code while implementing innovative solutions for complex business requirements. I'm passionate about optimizing application performance and creating intuitive user experiences."
     }
+  },
+  "workExperience": {
+    "heading": "Work Experience",
+    "experiences": [
+      {
+        "company": "Techcanopy Software labs",
+        "role": "Software Engineer",
+        "duration": "April 2023 - Present",
+        "location": "Bangalore, India",
+        "projects": [
+          {
+            "title": "Project: Multi-User WiFi Management System",
+            "technologies": "Symfony, HTML, JavaScript, MySQL, SOAP APIs",
+            "points": [
+              "Developed a multi-portal WiFi management system for a service provider, supporting individual customers, corporate clients, administrators, and resellers.",
+              "Created APIs in Symfony to integrate with internal services for seamless WiFi allocation, plan management, and user accounts.",
+              "Designed diverse subscription plans with flexible data limits, speeds, and multiple payment methods (credit/debit cards, digital wallets, and offline options).",
+              "Collaborated with the frontend team to ensure responsive and user-friendly portals.",
+              "Engineered MySQL database schemas to efficiently manage data related to users, plans, and transactions."
+            ]
+          },
+          {
+            "title": "Project: Admin Application Optimization (EdTech Platform)",
+            "technologies": "PHP, MySQL, HTML, CSS, JavaScript",
+            "points": [
+              "Optimized an admin application for handling large datasets and addressing performance issues.",
+              "Improved query performance by redesigning SQL queries and implementing database indexing, enhancing application responsiveness.",
+              "Designed an export functionality for large datasets using a job-based processing system to manage export requests and generate Excel reports."
+            ]
+          },
+          {
+            "title": "Project: Client Application for EdTech Platform",
+            "technologies": "React Native, Node.js, HTML, CSS, JavaScript",
+            "points": [
+              "Designed a user-friendly interface for creating resumes with complex UI screens and modals.",
+              "Integrated database data retrieval for auto-populating resumes with relevant details.",
+              "Developed a template-based system, enabling users to choose templates and purchase additional ones."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Techcanopy Software labs",
+        "role": "Intern",
+        "duration": "Feb 2023 - June 2023",
+        "location": "Bangalore, India",
+        "projects": [
+          {
+            "title": "Internship Project: Recruitment Application Development",
+            "technologies": "React, AWS",
+            "points": [
+              "Simplified the hiring process through a recruitment application.",
+              "Developed two primary login modules:",
+              "User Login: Enabled candidates to register, create profiles, and apply for roles.",
+              "Partner Login: Allowed talent partners to submit candidate details via a dedicated interface.",
+              "Facilitated manual review and filtering of candidate submissions by recruitment teams.",
+              "Enabled automated email updates to candidates and talent partners.",
+              "Improved efficiency in managing candidate profiles and communication during the hiring process."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Zeliot",
+        "role": "Software Intern",
+        "duration": "Nov 2022 - Dec 2022",
+        "location": "Bangalore, India",
+        "projects": [
+          {
+            "title": "Internship Project: Recruitment Application Development",
+            "technologies": "React, AWS",
+            "points": [
+              "Simplified the hiring process through a recruitment application.",
+              "Developed two primary login modules:",
+              "User Login: Enabled candidates to register, create profiles, and apply for roles.",
+              "Partner Login: Allowed talent partners to submit candidate details via a dedicated interface.",
+              "Facilitated manual review and filtering of candidate submissions by recruitment teams.",
+              "Enabled automated email updates to candidates and talent partners.",
+              "Improved efficiency in managing candidate profiles and communication during the hiring process."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "heading": "Education",
+    "institutions": [
+      {
+        "degree": "Bachelor of Engineering ( Computer Science )",
+        "institution": "SJB Insititute of Technology, Bangalore, India",
+        "duration": "March 2019 - March 2023",
+        "score": "CGPA: 8.77",
+        "logo": {
+          "src": "/SJBIT-logo.png",
+          "alt": "SJBIT Logo"
+        }
+      },
+      {
+        "degree": "Pre University College",
+        "institution": "Sadana PU College, Bangalore, India",
+        "duration": "March 2017 - March 2019",
+        "score": "Percentage: 85%",
+        "logo": {
+          "src": "/SADANA-logo.png",
+          "alt": "Sadana PU College Logo"
+        }
+      },
+      {
+        "degree": "High School",
+        "institution": "The New Cambridge English School, Bangalore, India",
+        "duration": "March 2005 - March 2017",
+        "score": "Percentage: 90%",
+        "logo": {
+          "src": "/TNCES-logo.png",
+          "alt": "The New Cambridge English School Logo"
+        }
+      }
+    ]
+  },
+  "certifications": {
+    "heading": "Certifications",
+    "certificates": [
+      {
+        "title": "Programming, Data Structures and Algorithms Using Python",
+        "provider": "NPTEL",
+        "duration": "Sep 2020 - Nov 2020",
+        "logo": {
+          "src": "/nptel-logo.png",
+          "alt": "NPTEL Logo"
+        },
+        "certificate": "/certificates/PythonNPTElCertificate.jpg"
+      },
+      {
+        "title": "Enhancing Soft Skills and Personality",
+        "provider": "NPTEL",
+        "duration": "Feb 2020 - Apr 2020",
+        "logo": {
+          "src": "/nptel-logo.png",
+          "alt": "NPTEL Logo"
+        },
+        "certificate": "/certificates/SoftSkillsNptelCertificate.jpg"
+      },
+      {
+        "title": "The Web Developer Bootcamp 2025",
+        "provider": "Udemy",
+        "duration": "2023",
+        "logo": {
+          "src": "/udemylogo.png",
+          "alt": "Udemy Logo"
+        },
+        "certificate": "/certificates/web-dev-udemy.pdf"
+      },
+      {
+        "title": "The Complete Python Bootcamp From Zero to Hero in Python",
+        "provider": "Udemy",
+        "duration": "2023",
+        "logo": {
+          "src": "/udemylogo.png",
+          "alt": "Udemy Logo"
+        },
+        "certificate": "/certificates/UdemypythonCertificate.pdf"
+      }
+    ]
   }
 } 
