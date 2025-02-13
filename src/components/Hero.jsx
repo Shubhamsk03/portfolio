@@ -1,75 +1,71 @@
 import React from 'react'
 import styles from '../styles/Hero.module.css'
+import content from '../content/content.json'
 
 const Hero = () => {
+  const { hero } = content;
+  
   return (
     <main className={styles.mainContent}>
       <div className={styles.heroBackground}></div>
       <div className={styles.topSection}>
         <section className={styles.introSection}>
           <div className={styles.introText}>
-            <h1 className={styles.introHeading}>Hello, I'm</h1>
-            <h2 className={styles.introName}>Shubham S Kawalikai,</h2>
-            <h3 className={styles.introRole}>Software Engineer</h3>
-            
-        <section className={styles.socialLinks}>
-          <a 
-            href="https://www.linkedin.com/in/shubham-kawalikai/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className={styles.socialIcon}
-          >
-            <img 
-              src="/LinkedIn-logo.png"
-              alt="LinkedIn" 
-              className={styles.socialIconImage}
-            />
-          </a>
-          <a 
-            href="https://github.com/Shubhamsk03" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className={styles.socialIcon}
-          >
-            <img src="/Github-logo.png" alt="GitHub" className={styles.socialIconImage} />
-          </a>
-          <a 
-            href="/resume.pdf" 
-            download="Shubham_Kawalikai_Resume.pdf"
-            className={styles.downloadButton}
-          >
-            Download Resume
-          </a>
-        </section>
+            <h1 className={styles.introHeading}>{hero.intro.greeting}</h1>
+            <h2 className={styles.introName}>{hero.intro.name}</h2>
+            <h3 className={styles.introRole}>{hero.intro.role}</h3>
           </div>
-
+          
+          <section className={styles.socialLinks}>
+            <a 
+              href={hero.social.linkedin.url}
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={styles.socialIcon}
+            >
+              <img 
+                src="/LinkedIn-logo.png"
+                alt={hero.social.linkedin.alt}
+                className={styles.socialIconImage}
+              />
+            </a>
+            <a 
+              href={hero.social.github.url}
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={styles.socialIcon}
+            >
+              <img 
+                src="/Github-logo.png" 
+                alt={hero.social.github.alt} 
+                className={styles.socialIconImage} 
+              />
+            </a>
+            <a 
+              href="/resume.pdf" 
+              download={hero.social.resume.filename}
+              className={styles.downloadButton}
+            >
+              {hero.social.resume.buttonText}
+            </a>
+          </section>
         </section>
 
-        <section className={styles.profileSection} style={{ position: 'relative', zIndex: 10 }}>
+        <section className={styles.profileSection}>
           <img 
             src="/SHUBHAMPhoto.jpg"
             alt="Profile"
             className={styles.profileImage}
           />
         </section>
-
       </div>
 
       <div className={styles.bottomSection}>
-      <div></div>
+        <div></div>
         <section className={styles.aboutSection}>
-          <h2 className={styles.aboutHeading}>about.</h2>
-          <p className={styles.aboutText}>
-            I'm a Software Engineer with expertise in full-stack development, currently working at Techcanopy Software Labs. 
-            My experience spans across building scalable web applications using React, AWS, Symfony, and various other technologies. 
-            I specialize in developing user-centric solutions, from multi-portal WiFi management systems to optimized admin applications 
-            for EdTech platforms. With a strong foundation in both front-end and back-end development, I focus on creating efficient, 
-            maintainable code while implementing innovative solutions for complex business requirements. I'm passionate about optimizing 
-            application performance and creating intuitive user experiences.
-          </p>
+          <h2 className={styles.aboutHeading}>{hero.about.heading}</h2>
+          <p className={styles.aboutText}>{hero.about.text}</p>
         </section>
-        {/* Empty div to maintain grid layout */}
-        
       </div>
     </main>
   )

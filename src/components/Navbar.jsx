@@ -1,7 +1,10 @@
 import React from 'react'
 import styles from '../styles/Navbar.module.css'
+import content from '../content/content.json'
 
 const Navbar = () => {
+  const { navbar } = content;
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
     if (element) {
@@ -14,27 +17,18 @@ const Navbar = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>SSK</div>
+      <div className={styles.logo}>{navbar.logo}</div>
       <nav>
         <ul className={styles.nav}>
-          <li 
-            className={styles.navItem}
-            onClick={() => scrollToSection('experience')}
-          >
-            Experience
-          </li>
-          <li 
-            className={styles.navItem}
-            onClick={() => scrollToSection('certifications')}
-          >
-            Certifications
-          </li>
-          <li 
-            className={styles.navItem}
-            onClick={() => scrollToSection('education')}
-          >
-            Education
-          </li>
+          {navbar.menuItems.map((item, index) => (
+            <li 
+              key={index}
+              className={styles.navItem}
+              onClick={() => scrollToSection(item.toLowerCase())}
+            >
+              {item}
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

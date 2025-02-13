@@ -2,13 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  margin-bottom: 4rem;
-  animation: fadeInDown 0.8s ease-out;
-  position: sticky;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  margin-bottom: 2rem;
   top: 0;
-  background-color: #E6DCC3;
-  z-index: 100;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--background-color, #fff);
+  animation: fadeInDown 0.8s ease-out;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 

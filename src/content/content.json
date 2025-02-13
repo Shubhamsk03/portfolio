@@ -1,0 +1,35 @@
+{
+  "navbar": {
+    "logo": "SSK",
+    "menuItems": [
+      "Experience",
+      "Certifications",
+      "Education"
+    ]
+  },
+  "hero": {
+    "intro": {
+      "greeting": "Hello, I'm",
+      "name": "Shubham S Kawalikai,",
+      "role": "Software Engineer"
+    },
+    "social": {
+      "linkedin": {
+        "url": "https://www.linkedin.com/in/shubham-kawalikai/",
+        "alt": "LinkedIn"
+      },
+      "github": {
+        "url": "https://github.com/Shubhamsk03",
+        "alt": "GitHub"
+      },
+      "resume": {
+        "buttonText": "Download Resume",
+        "filename": "Shubham_Kawalikai_Resume.pdf"
+      }
+    },
+    "about": {
+      "heading": "about.",
+      "text": "I'm a Software Engineer with expertise in full-stack development, currently working at Techcanopy Software Labs. My experience spans across building scalable web applications using React, AWS, Symfony, and various other technologies. I specialize in developing user-centric solutions, from multi-portal WiFi management systems to optimized admin applications for EdTech platforms. With a strong foundation in both front-end and back-end development, I focus on creating efficient, maintainable code while implementing innovative solutions for complex business requirements. I'm passionate about optimizing application performance and creating intuitive user experiences."
+    }
+  }
+} 

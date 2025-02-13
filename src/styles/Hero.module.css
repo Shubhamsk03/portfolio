@@ -1,11 +1,12 @@
 .mainContent {
   display: flex;
   flex-direction: column;
-  max-width: 90%; /* Match WorkExperience width */
+  max-width: 81%; /* Reduced from 90% */
   margin: 0 auto;
-  gap: 2rem;
+  gap: 1.8rem; /* Reduced from 2rem */
   position: relative;
   width: 100%;
+  padding-top: 54px; /* Reduced from 60px */
 }
 
 .heroBackground {
@@ -41,24 +42,24 @@
 }
 
 .introHeading {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 1.8rem; /* Reduced from 2rem */
+  margin-bottom: 0.9rem; /* Reduced from 1rem */
   font-weight: 500;
 }
 
 .introName {
-  font-size: 3.5rem;
+  font-size: 3.15rem; /* Reduced from 3.5rem */
   font-weight: bold;
-  margin: 0.5rem 0;
+  margin: 0.45rem 0; /* Reduced from 0.5rem */
   background: linear-gradient(45deg, #4A3F35, #6B5B4D);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .introRole {
-  font-size: 2rem;
+  font-size: 1.8rem; /* Reduced from 2rem */
   color: #666;
-  margin-top: 1rem;
+  margin-top: 0.9rem; /* Reduced from 1rem */
 }
 
 .profileSection {
@@ -68,15 +69,15 @@
   justify-content: center;
   align-items: center;
   padding: 20px; /* Add some padding around the container */
-  z-index: 2;
+  z-index: 10;
 }
 
 .profileImage {
-  width: 100%;
-  max-width: 400px;
-  height: 400px; /* Set explicit height */
+  width: 90%;
+  max-width: 360px; /* Reduced from 400px */
+  height: 360px; /* Reduced from 400px */
   border-radius: 50%;
-  border: 8px solid #FFF;
+  border: 7px solid #FFF; /* Reduced from 8px */
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
   object-fit: cover;
@@ -91,8 +92,8 @@
 
 .socialLinks {
   display: flex;
-  gap: 1.5rem;
-  margin: 2rem 0;
+  gap: 1.35rem; /* Reduced from 1.5rem */
+  margin: 1.8rem 0; /* Reduced from 2rem */
   animation: fadeInUp 1.2s ease-out;
   position: relative;
   z-index: 2;
@@ -100,8 +101,8 @@
 
 .socialIcon {
   background-color: #4A3F35;
-  width: 45px;
-  height: 45px;
+  width: 40.5px; /* Reduced from 45px */
+  height: 40.5px; /* Reduced from 45px */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -109,12 +110,12 @@
   color: #FFF;
   text-decoration: none;
   transition: all 0.3s ease;
-  padding: 10px;
+  padding: 9px; /* Reduced from 10px */
 }
 
 .socialIconImage {
-  width: 20px;
-  height: 20px;
+  width: 18px; /* Reduced from 20px */
+  height: 18px; /* Reduced from 20px */
   object-fit: contain;
   filter: none;
 }
@@ -122,12 +123,12 @@
 .downloadButton {
   background-color: #FFFFFF;
   color: #000000;
-  padding: 12px 24px;
+  padding: 10.8px 21.6px; /* Reduced from 12px 24px */
   border-radius: 100px;
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 1.1rem;
+  font-size: 0.99rem; /* Reduced from 1.1rem */
   width: fit-content;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -172,26 +173,26 @@
 }
 
 .aboutHeading {
-  font-size: 3rem;
+  font-size: 2.7rem; /* Reduced from 3rem */
   color: #4A3F35;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.35rem; /* Reduced from 1.5rem */
   font-weight: bold;
 }
 
 .aboutText {
   color: #666;
-  line-height: 1.8;
-  font-size: 1.1rem;
+  line-height: 1.62; /* Reduced from 1.8 */
+  font-size: 0.99rem; /* Reduced from 1.1rem */
 }
 
 /* Add responsive styles */
 @media (max-width: 1024px) {
   .mainContent {
-    max-width: 95%;
+    max-width: 85.5%; /* Reduced from 95% */
   }
 
   .introName {
-    font-size: 3rem;
+    font-size: 2.7rem; /* Reduced from 3rem */
   }
 }
 
@@ -206,8 +207,8 @@
   }
 
   .profileImage {
-    max-width: 300px;
-    height: 300px; /* Maintain aspect ratio on mobile */
+    max-width: 270px; /* Reduced from 300px */
+    height: 270px; /* Reduced from 300px */
   }
 
   .socialLinks {
@@ -219,20 +220,20 @@
   }
 
   .introName {
-    font-size: 2.5rem;
+    font-size: 2.25rem; /* Reduced from 2.5rem */
   }
 
   .introRole {
-    font-size: 1.5rem;
+    font-size: 1.35rem; /* Reduced from 1.5rem */
   }
 }
 
 @media (max-width: 480px) {
   .introName {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Reduced from 2rem */
   }
 
   .aboutHeading {
-    font-size: 2.5rem;
+    font-size: 2.25rem; /* Reduced from 2.5rem */
   }
 } 
