@@ -1,0 +1,100 @@
+.container {
+  padding: 3.2rem 0;
+  max-width: 81%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #E6DCC3;
+}
+
+.heading {
+  font-size: 2.4rem;
+  color: #4A3F35;
+  margin-top: 3rem;
+  text-align: center;
+  font-weight: bold;
+  /* padding: 1rem 0; */
+  /* z-index: 1; */
+}
+
+.sliderContainer {
+  position: relative;
+  /* padding: 2rem 0; */
+  overflow: hidden;
+  /* margin-top: 1rem; */
+  background-color: #E6DCC3;
+}
+
+.slider {
+  display: flex;
+  gap: 4rem;
+  animation: slide 30s linear infinite;
+  padding: 1rem 0;
+}
+
+.slide {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  min-width: 120px;
+  transition: transform 0.3s ease;
+  background-color: transparent;
+}
+
+.slide:hover {
+  transform: translateY(-10px);
+}
+
+.techLogo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+.techName {
+  font-size: 0.9rem;
+  color: #4A3F35;
+  text-align: center;
+  font-weight: 500;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Add hover pause */
+.sliderContainer:hover .slider {
+  animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem 1rem;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+    /* margin-bottom: 2rem; */
+  }
+
+  .slider {
+    gap: 2rem;
+  }
+
+  .slide {
+    min-width: 100px;
+  }
+
+  .techLogo {
+    width: 50px;
+    height: 50px;
+  }
+} 

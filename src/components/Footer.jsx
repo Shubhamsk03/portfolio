@@ -11,22 +11,22 @@ const Footer = () => {
           © {currentYear} Shubham S Kawalikai. All rights reserved.
         </p>
         <div className={styles.socialLinks}>
-          <a 
+          {/* <a 
             href="https://linkedin.com/in/your-profile" 
             target="_blank" 
             rel="noopener noreferrer"
             className={styles.socialLink}
           >
             LinkedIn
-          </a>
-          <a 
+          </a> */}
+          {/* <a 
             href="https://github.com/your-profile" 
             target="_blank" 
             rel="noopener noreferrer"
             className={styles.socialLink}
           >
             GitHub
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>

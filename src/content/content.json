@@ -195,5 +195,50 @@
         "certificate": "/certificates/UdemypythonCertificate.pdf"
       }
     ]
+  },
+  "skills": {
+    "heading": "Skills & Technologies",
+    "technologies": [
+      {
+        "name": "React",
+        "logo": "/tech-logos/react-logo.png"
+      },
+      {
+        "name": "JavaScript",
+        "logo": "/tech-logos/javascript-logo.png"
+      },
+      {
+        "name": "Node.js",
+        "logo": "/tech-logos/nodejs-logo.png"
+      },
+      {
+        "name": "PHP",
+        "logo": "/tech-logos/php-logo.png"
+      },
+      {
+        "name": "Symfony",
+        "logo": "/tech-logos/symfony-logo.png"
+      },
+      {
+        "name": "MySQL",
+        "logo": "/tech-logos/mysql-logo.png"
+      },
+      {
+        "name": "AWS",
+        "logo": "/tech-logos/aws-logo.png"
+      },
+      {
+        "name": "HTML5",
+        "logo": "/tech-logos/html5-logo.png"
+      },
+      {
+        "name": "CSS3",
+        "logo": "/tech-logos/css3-logo.png"
+      },
+      {
+        "name": "Git",
+        "logo": "/tech-logos/git-logo.png"
+      }
+    ]
   }
 } 

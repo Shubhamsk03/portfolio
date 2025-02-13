@@ -1,12 +1,12 @@
 .mainContent {
   display: flex;
   flex-direction: column;
-  max-width: 81%; /* Reduced from 90% */
+  max-width: 81%; 
   margin: 0 auto;
-  gap: 1.8rem; /* Reduced from 2rem */
+  gap: 1.8rem;
   position: relative;
   width: 100%;
-  padding-top: 80px; /* Increased from 54px to account for navbar height */
+  padding-top: 60px; 
 }
 
 .heroBackground {
@@ -14,7 +14,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%; /* This makes it extend halfway */
+  height: 50%; 
   background-color: var(--navbar-bg-color); /* Use your navbar's color */
   z-index: 1;
 }
@@ -70,21 +70,24 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  z-index: 20; /* Increased z-index to ensure it's above navbar */
+  z-index: 20;
+  animation: slideInProfile 1s ease-out;
 }
 
 .profileImage {
   width: 90%;
-  max-width: 360px; /* Reduced from 400px */
-  height: 360px; /* Reduced from 400px */
+  max-width: 360px;
+  height: 360px;
   border-radius: 50%;
-  border: 7px solid #FFF; /* Reduced from 8px */
+  border: 7px solid #FFF;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
   object-fit: cover;
-  object-position: top center; /* This will pull the image up */
+  object-position: top center;
   position: relative;
   z-index: 2;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out 0.5s forwards;
 }
 
 .profileImage:hover {
@@ -122,17 +125,17 @@
 }
 
 .downloadButton {
-  background-color: #FFFFFF;
-  color: #000000;
-  padding: 10.8px 21.6px; /* Reduced from 12px 24px */
+  background-color: #4A3F35;
+  color: #FFFFFF;
+  padding: 10.8px 21.6px;
   border-radius: 100px;
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.99rem; /* Reduced from 1.1rem */
+  font-size: 0.99rem;
   width: fit-content;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .downloadButton::before {
@@ -141,7 +144,8 @@
 
 .downloadButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #5D4E42;
 }
 
 .socialIcon:hover {
@@ -206,6 +210,7 @@
 
   .profileSection {
     order: -1; /* Move profile image to top on mobile */
+    animation: slideInProfile 1s ease-out;
   }
 
   .profileImage {
@@ -242,5 +247,25 @@
 
   .aboutHeading {
     font-size: 2.25rem; /* Reduced from 2.5rem */
+  }
+}
+
+@keyframes slideInProfile {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 } 

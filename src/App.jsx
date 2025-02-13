@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Skills from './components/Skills'
 import WorkExperience from './components/WorkExperience'
 import Certifications from './components/Certifications'
 import Education from './components/Education'
@@ -16,6 +17,7 @@ function App() {
 
       <Navbar />
       <Hero />
+      <Skills />
       <WorkExperience />
       <Certifications />
       <Education />
