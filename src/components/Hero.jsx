@@ -1,17 +1,38 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from '../styles/Hero.module.css'
 import content from '../content/content.json'
 
 const Hero = () => {
   const { hero } = content;
-  
+  const greetings = ["Hello", "ನಮಸ್ಕಾರ", "नमस्ते", "Hallo"]; // English, Kannada, Hindi, German
+  const [currentGreeting, setCurrentGreeting] = useState(greetings[0]);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentGreeting(prev => {
+        const currentIndex = greetings.indexOf(prev);
+        const nextIndex = (currentIndex + 1) % greetings.length;
+        return greetings[nextIndex];
+      });
+    }, 1000); // 500ms = half second
+
+    return () => clearInterval(intervalId); // Cleanup on unmount
+  }, []);
+
   return (
     <main className={styles.mainContent}>
       <div className={styles.heroBackground}></div>
       <div className={styles.topSection}>
+        <div className={styles.bouncingCircle1}></div>
+        <div className={styles.bouncingCircle2}></div>
+        <div className={styles.bouncingCircle3}></div>
+        <div className={styles.bouncingCircle4}></div>
+        <div className={styles.bouncingCircle5}></div>
+        <div className={styles.bouncingCircle6}></div>
+        
         <section className={styles.introSection}>
           <div className={styles.introText}>
-            <h1 className={styles.introHeading}>{hero.intro.greeting}</h1>
+            <h1 className={styles.introHeading}>{currentGreeting}, I am</h1>
             <h2 className={styles.introName}>{hero.intro.name}</h2>
             <h3 className={styles.introRole}>{hero.intro.role}</h3>
           </div>
@@ -42,7 +63,7 @@ const Hero = () => {
               />
             </a>
             <a 
-              href="/Resume-Shubham.pdf"
+              href="/ShubhamResume.pdf"
               download={hero.social.resume.filename}
               className={styles.downloadButton}
             >

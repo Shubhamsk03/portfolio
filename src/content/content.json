@@ -9,7 +9,7 @@
   },
   "hero": {
     "intro": {
-      "greeting": "Hello, I'm",
+      "greeting": "Hello, I am",
       "name": "Shubham S Kawalikai,",
       "role": "Software Engineer"
     },
@@ -123,7 +123,7 @@
         "degree": "Bachelor of Engineering ( Computer Science )",
         "institution": "SJB Insititute of Technology, Bangalore, India",
         "duration": "March 2019 - March 2023",
-        "score": "CGPA: 8.77",
+        "score": "CGPA: 8.8",
         "logo": {
           "src": "/SJBIT-logo.png",
           "alt": "SJBIT Logo"
@@ -225,15 +225,15 @@
       },
       {
         "name": "AWS",
-        "logo": "/tech-logos/aws-logo.png"
+        "logo": "/tech-logos/aws-logo.jpeg"
       },
       {
         "name": "HTML5",
-        "logo": "/tech-logos/html5-logo.png"
+        "logo": "/tech-logos/html5-logo.jpeg"
       },
       {
         "name": "CSS3",
-        "logo": "/tech-logos/css3-logo.png"
+        "logo": "/tech-logos/css3-logo.jpeg"
       },
       {
         "name": "Git",
