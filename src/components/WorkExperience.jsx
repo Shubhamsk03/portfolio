@@ -62,14 +62,15 @@ const WorkExperience = () => {
     },
     bulletPoint: {
       position: 'relative',
-      paddingLeft: '1rem',
+      paddingLeft: '1.5rem',
       marginBottom: '0.5rem',
       fontSize: '14px',
       lineHeight: '1.5',
-      '::before': {
+      '&::before': {
         content: '"•"',
         position: 'absolute',
-        left: 0
+        left: '0.5rem',
+        color: '#4A3F35'
       }
     },
     companyName: {
@@ -92,6 +93,23 @@ const WorkExperience = () => {
 
   return (
     <section id="experience" style={styles.container}>
+      <style>
+        {`
+          .bullet-point {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 14px;
+            line-height: 1.5;
+          }
+          .bullet-point::before {
+            content: "•";
+            position: absolute;
+            left: 0.5rem;
+            color: #4A3F35;
+          }
+        `}
+      </style>
       <h2 style={styles.heading}>Work Experience</h2>
       <div style={styles.rightContent}>
         {/* Left side - Projects */}
@@ -102,22 +120,22 @@ const WorkExperience = () => {
             {/* <p style={styles.projectRole}>Role: Full Stack Developer</p> */}
             <p style={styles.technologies}>Technologies: Symfony, HTML, JavaScript, MySQL, SOAP APIs</p>
             <ul style={styles.bulletPoints}>
-              <li style={styles.bulletPoint}>
+              <li className="bullet-point">
                 Developed a multi-portal WiFi management system for a service provider, supporting
                 individual customers, corporate clients, administrators, and resellers.
               </li>
-              <li style={styles.bulletPoint}>
+              <li className="bullet-point">
                 Created APIs in Symfony to integrate with internal services for seamless WiFi allocation,
                 plan management, and user accounts.
               </li>
-              <li style={styles.bulletPoint}>
+              <li className="bullet-point">
                 Designed diverse subscription plans with flexible data limits, speeds, and multiple
                 payment methods (credit/debit cards, digital wallets, and offline options).
               </li>
-              <li style={styles.bulletPoint}>
+              <li className="bullet-point">
                 Collaborated with the frontend team to ensure responsive and user-friendly portals.
               </li>
-              <li style={styles.bulletPoint}>
+              <li className="bullet-point">
                 Engineered MySQL database schemas to efficiently manage data related to users, plans,
                 and transactions.
               </li>
@@ -127,15 +145,15 @@ const WorkExperience = () => {
             {/* <p style={styles.projectRole}>Role: Web Developer</p> */}
             <p style={styles.technologies}>Technologies: PHP, MySQL, HTML, CSS, JavaScript</p>
             <ul style={styles.bulletPoints}>
-              <li style={styles.bulletPoint}>
+              <li className="bullet-point">
                 Optimized an admin application for handling large datasets and addressing
                 performance issues.
               </li>
-              <li style={styles.bulletPoint}>
+              <li className="bullet-point">
                 Improved query performance by redesigning SQL queries and implementing database
                 indexing, enhancing application responsiveness.
               </li>
-              <li style={styles.bulletPoint}>
+              <li className="bullet-point">
                 Designed an export functionality for large datasets using a job-based processing
                 system to manage export requests and generate Excel reports.
               </li>
@@ -145,14 +163,14 @@ const WorkExperience = () => {
             {/* <p style={styles.projectRole}>Role: Full Stack Developer</p> */}
             <p style={styles.technologies}>Technologies: React Native, Node.js, HTML, CSS, JavaScript</p>
             <ul style={styles.bulletPoints}>
-              <li style={styles.bulletPoint}>
+              <li className="bullet-point">
                 Designed a user-friendly interface for creating resumes with complex UI screens and
                 modals.
               </li>
-              <li style={styles.bulletPoint}>
+              <li className="bullet-point">
                 Integrated database data retrieval for auto-populating resumes with relevant details.
               </li>
-              <li style={styles.bulletPoint}>
+              <li className="bullet-point">
                 Developed a template-based system, enabling users to choose templates and
                 purchase additional ones.
               </li>
@@ -184,25 +202,25 @@ const WorkExperience = () => {
           {/* <p style={styles.projectRole}>Role: Intern</p> */}
           <p style={styles.technologies}>Technologies: React, AWS</p>
           <ul style={styles.bulletPoints}>
-            <li style={styles.bulletPoint}>
+            <li className="bullet-point">
               Simplified the hiring process through a recruitment application.
             </li>
-            <li style={styles.bulletPoint}>
+            <li className="bullet-point">
               Developed two primary login modules:
             </li>
-            <li style={styles.bulletPoint}>
+            <li className="bullet-point">
               User Login: Enabled candidates to register, create profiles, and apply for roles.
             </li>
-            <li style={styles.bulletPoint}>
+            <li className="bullet-point">
               Partner Login: Allowed talent partners to submit candidate details via a dedicated interface.
             </li>
-            <li style={styles.bulletPoint}>
+            <li className="bullet-point">
               Facilitated manual review and filtering of candidate submissions by recruitment teams.
             </li>
-            <li style={styles.bulletPoint}>
+            <li className="bullet-point">
               Enabled automated email updates to candidates and talent partners.
             </li>
-            <li style={styles.bulletPoint}>
+            <li className="bullet-point">
               Improved efficiency in managing candidate profiles and communication during the hiring process.
             </li>
           </ul>
@@ -219,25 +237,25 @@ const WorkExperience = () => {
           {/* <p style={styles.projectRole}>Role: Intern</p> */}
           <p style={styles.technologies}>Technologies: React, AWS</p>
           <ul style={styles.bulletPoints}>
-            <li style={styles.bulletPoint}>
+            <li className="bullet-point">
               Simplified the hiring process through a recruitment application.
             </li>
-            <li style={styles.bulletPoint}>
+            <li className="bullet-point">
               Developed two primary login modules:
             </li>
-            <li style={styles.bulletPoint}>
+            <li className="bullet-point">
               User Login: Enabled candidates to register, create profiles, and apply for roles.
             </li>
-            <li style={styles.bulletPoint}>
+            <li className="bullet-point">
               Partner Login: Allowed talent partners to submit candidate details via a dedicated interface.
             </li>
-            <li style={styles.bulletPoint}>
+            <li className="bullet-point">
               Facilitated manual review and filtering of candidate submissions by recruitment teams.
             </li>
-            <li style={styles.bulletPoint}>
+            <li className="bullet-point">
               Enabled automated email updates to candidates and talent partners.
             </li>
-            <li style={styles.bulletPoint}>
+            <li className="bullet-point">
               Improved efficiency in managing candidate profiles and communication during the hiring process.
             </li>
           </ul>

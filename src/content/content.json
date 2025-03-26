@@ -9,7 +9,7 @@
   },
   "hero": {
     "intro": {
-      "greeting": "Hello, I am",
+      "greeting": "Hello, I'm",
       "name": "Shubham S Kawalikai,",
       "role": "Software Engineer"
     },
@@ -225,15 +225,15 @@
       },
       {
         "name": "AWS",
-        "logo": "/tech-logos/aws-logo.jpeg"
+        "logo": "/tech-logos/aws-logo.jpg"
       },
       {
         "name": "HTML5",
-        "logo": "/tech-logos/html5-logo.jpeg"
+        "logo": "/tech-logos/html5-logo.jpg"
       },
       {
         "name": "CSS3",
-        "logo": "/tech-logos/css3-logo.jpeg"
+        "logo": "/tech-logos/css3-logo.jpg"
       },
       {
         "name": "Git",
