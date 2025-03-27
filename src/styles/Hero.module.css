@@ -395,4 +395,40 @@
   left: 20%;
   z-index: 1;
   animation: bounce6 10s ease-in-out infinite;
+}
+
+.animatedGreeting {
+  display: inline-block;
+  min-width: 85px; /* Adjust based on your longest greeting */
+  text-align: left;
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 } 

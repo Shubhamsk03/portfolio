@@ -1,9 +1,33 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from '../styles/Hero.module.css'
 import content from '../content/content.json'
 
 const Hero = () => {
   const { hero } = content;
+  
+  // Array of "Hello" in different languages
+  const greetings = ["ನಮಸ್ಕಾರ", "నమస్కారం", "नमस्ते", "Hallo", "Bonjour", "Hello"];
+  const [currentGreetingIndex, setCurrentGreetingIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+  
+  useEffect(() => {
+    // Animation duration constants
+    const fadeTime = 300; // 300ms for fade in/out 
+    const cycleTime = 1000; // 1000ms (1 second) total cycle time
+    
+    const interval = setInterval(() => {
+      setIsAnimating(true);
+      
+      // Wait for fade-out animation to complete
+      setTimeout(() => {
+        setCurrentGreetingIndex((prevIndex) => (prevIndex + 1) % greetings.length);
+        setIsAnimating(false);
+      }, fadeTime); // Time for the fade-out effect
+      
+    }, cycleTime); // Change every 1 second (1000ms)
+    
+    return () => clearInterval(interval);
+  }, []);
   
   return (
     <main className={styles.mainContent}>
@@ -18,8 +42,12 @@ const Hero = () => {
         
         <section className={styles.introSection}>
           <div className={styles.introText}>
-            <h1 className={styles.introHeading}>{hero.intro.greeting}</h1>
-            <h2 className={styles.introName}>{hero.intro.name}</h2>
+            <h1 className={styles.introHeading}>
+              <span className={`${styles.animatedGreeting} ${isAnimating ? styles.fadeOut : styles.fadeIn}`}>
+                {greetings[currentGreetingIndex]}
+              </span>
+            </h1>
+            <h2 className={styles.introName}>I'm {hero.intro.name}</h2>
             <h3 className={styles.introRole}>{hero.intro.role}</h3>
           </div>
           
