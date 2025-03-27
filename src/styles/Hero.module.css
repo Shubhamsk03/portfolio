@@ -44,24 +44,26 @@
 }
 
 .introHeading {
-  font-size: 1.8rem; /* Reduced from 2rem */
+  font-family: 'Playfair Display', serif; /* Apply British-style font */
+  font-size: 2.5rem; /* Adjust size as needed */
   margin-bottom: 0.9rem; /* Reduced from 1rem */
   font-weight: 500;
 }
 
 .introName {
-  font-size: 3.15rem; /* Reduced from 3.5rem */
-  font-weight: bold;
-  margin: 0.45rem 0; /* Reduced from 0.5rem */
-  background: linear-gradient(45deg, #4A3F35, #6B5B4D);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: 'Playfair Display', serif; /* Apply British-style font */
+  font-size: 1.5rem; /* Adjusted size for smaller font */
+  font-weight: normal; /* Changed to normal weight */
+  margin: 0.45rem 0; /* Adjusted margin */
+  color: #4A3F35; /* Ensure it matches the theme */
 }
 
 .introRole {
-  font-size: 1.8rem; /* Reduced from 2rem */
-  color: #666;
-  margin-top: 0.9rem; /* Reduced from 1rem */
+  font-family: 'Playfair Display', serif; /* Apply British-style font */
+  font-size: 3.375rem; /* Increased size by 50% from 2.25rem */
+  font-weight: bold; /* Ensure it stands out */
+  margin: 0.5rem 0; /* Adjust margin as needed */
+  color: #4A3F35; /* Ensure it matches the theme */
 }
 
 .profileSection {
@@ -179,6 +181,7 @@
 }
 
 .aboutHeading {
+  font-family: 'Playfair Display', serif; /* Apply British-style font */
   font-size: 2.7rem; /* Reduced from 3rem */
   color: #4A3F35;
   margin-bottom: 1.35rem; /* Reduced from 1.5rem */
@@ -186,6 +189,7 @@
 }
 
 .aboutText {
+  font-family: 'Playfair Display', serif; /* Apply British-style font */
   color: #666;
   line-height: 1.62; /* Reduced from 1.8 */
   font-size: 0.99rem; /* Reduced from 1.1rem */

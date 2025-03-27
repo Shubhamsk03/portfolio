@@ -44,11 +44,11 @@ const Hero = () => {
           <div className={styles.introText}>
             <h1 className={styles.introHeading}>
               <span className={`${styles.animatedGreeting} ${isAnimating ? styles.fadeOut : styles.fadeIn}`}>
-                {greetings[currentGreetingIndex]}
+                {greetings[currentGreetingIndex]} ,
               </span>
             </h1>
-            <h2 className={styles.introName}>I'm {hero.intro.name}</h2>
-            <h3 className={styles.introRole}>{hero.intro.role}</h3>
+            <h2 className={styles.introName}>My name is</h2>
+            <h3 className={styles.introRole}>{hero.intro.name}</h3>
           </div>
           
           <section className={styles.socialLinks}>
@@ -76,23 +76,16 @@ const Hero = () => {
                 className={styles.socialIconImage} 
               />
             </a>
-            <a 
-              href="/ShubhamResume.pdf"
-              download={hero.social.resume.filename}
-              className={styles.downloadButton}
-            >
-              {hero.social.resume.buttonText}
-            </a>
           </section>
         </section>
 
-        <section className={styles.profileSection}>
+        {/* <section className={styles.profileSection}>
           <img 
             src="/SHUBHAMPhoto.jpg"
             alt="Profile"
             className={styles.profileImage}
           />
-        </section>
+        </section> */}
       </div>
 
       <div className={styles.bottomSection}>

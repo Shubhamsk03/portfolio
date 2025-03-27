@@ -39,6 +39,7 @@
   position: relative;
   transition: color 0.3s ease;
   user-select: none; /* Prevent text selection */
+  padding-top: 0.5rem; /* Add padding above the words */
 }
 
 .navItem:hover {
@@ -58,6 +59,24 @@
 
 .navItem:hover::after {
   width: 100%;
+}
+
+.resumeBtn {
+  background-color: #4A3F35;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resumeBtn:hover {
+  background-color: #2c261f;
+  transform: translateY(-2px);
+  color: white;
+}
+
+.resumeBtn:hover::after {
+  width: 0; /* Disable the underline effect for this button */
 }
 
 @media (max-width: 768px) {
