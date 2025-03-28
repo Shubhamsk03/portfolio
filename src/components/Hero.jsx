@@ -13,7 +13,7 @@ const Hero = () => {
   useEffect(() => {
     // Animation duration constants
     const fadeTime = 300; // 300ms for fade in/out 
-    const cycleTime = 1000; // 1000ms (1 second) total cycle time
+    const cycleTime = 1500; // Changed to 1500ms (1.5 seconds) total cycle time
     
     const interval = setInterval(() => {
       setIsAnimating(true);
@@ -24,7 +24,7 @@ const Hero = () => {
         setIsAnimating(false);
       }, fadeTime); // Time for the fade-out effect
       
-    }, cycleTime); // Change every 1 second (1000ms)
+    }, cycleTime); // Change every 1.5 seconds (1500ms)
     
     return () => clearInterval(interval);
   }, []);
@@ -46,9 +46,10 @@ const Hero = () => {
               <span className={`${styles.animatedGreeting} ${isAnimating ? styles.fadeOut : styles.fadeIn}`}>
                 {greetings[currentGreetingIndex]} ,
               </span>
+              <span className={styles.introStart}> I am</span>
             </h1>
-            <h2 className={styles.introName}>My name is</h2>
-            <h3 className={styles.introRole}>{hero.intro.name}</h3>
+            <h3 className={styles.introName}>{hero.intro.name}</h3>
+            <h3 className={styles.introName}>{hero.intro.role}</h3>
           </div>
           
           <section className={styles.socialLinks}>

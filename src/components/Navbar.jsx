@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '../styles/Navbar.module.css'
 import content from '../content/content.json'
 
 const Navbar = () => {
   const { navbar } = content;
   const { resume } = content.hero.social;
+
+  const [visibleItems, setVisibleItems] = useState([]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVisibleItems([...navbar.menuItems.map((_, index) => index), 'resume']);
+    }, 100); // Start showing items after 100ms
+
+    return () => clearTimeout(timer);
+  }, [navbar.menuItems]);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
@@ -34,14 +44,16 @@ const Navbar = () => {
           {navbar.menuItems.map((item, index) => (
             <li 
               key={index}
-              className={styles.navItem}
+              className={`${styles.navItem} ${visibleItems.includes(index) ? styles.visible : styles.hidden}`}
+              style={{ transitionDelay: `${index * 100}ms` }}
               onClick={() => scrollToSection(item.toLowerCase())}
             >
               {item}
             </li>
           ))}
           <li 
-            className={`${styles.navItem} ${styles.resumeBtn}`}
+            className={`${styles.navItem} ${styles.resumeBtn} ${visibleItems.includes('resume') ? styles.visible : styles.hidden}`}
+            style={{ transitionDelay: `${navbar.menuItems.length * 100}ms` }}
             onClick={downloadResume}
           >
             {resume.buttonText}

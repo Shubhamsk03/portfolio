@@ -40,6 +40,19 @@
   transition: color 0.3s ease;
   user-select: none; /* Prevent text selection */
   padding-top: 0.5rem; /* Add padding above the words */
+  opacity: 0; /* Start hidden */
+  transform: translateY(-10px); /* Start above */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Animation for opacity and position */
+}
+
+.navItem.visible {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to original position */
+}
+
+.navItem.hidden {
+  opacity: 0; /* Remain hidden */
+  transform: translateY(-10px); /* Stay above */
 }
 
 .navItem:hover {
@@ -64,9 +77,22 @@
 .resumeBtn {
   background-color: #4A3F35;
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  padding: 0.45rem 0.9rem;
+  border-radius: 20px;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  opacity: 0; /* Start hidden */
+  transform: translateY(-10px); /* Start above */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Animation for opacity and position */
+}
+
+.resumeBtn.visible {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to original position */
+}
+
+.resumeBtn.hidden {
+  opacity: 0; /* Remain hidden */
+  transform: translateY(-10px); /* Stay above */
 }
 
 .resumeBtn:hover {
@@ -76,7 +102,7 @@
 }
 
 .resumeBtn:hover::after {
-  width: 0; /* Disable the underline effect for this button */
+  width: 0;
 }
 
 @media (max-width: 768px) {

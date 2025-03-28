@@ -1,0 +1,6 @@
+.hero {
+    /* ... existing styles ... */
+    border: none; /* Remove the box border */
+    background: url('path/to/your/background-image.jpg'); /* Set your background image */
+    /* Add any other necessary styles to ensure it looks good */
+} 
